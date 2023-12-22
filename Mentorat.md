@@ -12,15 +12,23 @@
     - limite data leakage
     - imblearn
 - [x] GridSearch(plusieurs pipelines avec param differents)
-- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 - [ ] regarder machinelearnia video pipeline
 - [x] regarder 1e heure de [Scikit-Learn Crash course](https://yewtu.be/watch?v=0B5eIE_1vpU) 
 - [ ] faire vrai changelog ?
 ## 2023-12-29
-
+- [ ] shap values
+- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
+- fonction metier pour calculer gain/pertes avec y_pred/y
+    - si vrai neg : taux d'interet * montant pret
+    - si vrai pos : 0
+    - si faux neg : perte 25%
+- utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
+    - saisie biens
+- datadrift avec librairie Evidently pour monitorer changements dans le temps
+    - detecte gros changemnts entre train et est
 
 ## later
-- [ ] rectifieur de classes dans le pipeline
+- [x] rectifieur de classes dans le pipeline
 - [ ] optimisation paramètres
 - [ ] KPI monétaire pour patron à partir de taux d'intéret, bien saisis etc
 - [ ] ecrire README etc
@@ -35,3 +43,4 @@
 - convention X (matrice) mais y (array)
 - data leakage : X -> y, ou train -> test
 - split doit se faire avant scaler etc
+- pycharm, DataSpell (nb et sql)
