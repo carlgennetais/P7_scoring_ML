@@ -1,0 +1,883 @@
+[I 2023-12-22 11:59:33.223 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-12-22 11:59:33.259 ServerApp] Package jupyter_lsp took 0.0353s to import
+[W 2023-12-22 11:59:33.260 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2023-12-22 11:59:33.260 ServerApp] jupyter_server_mathjax | error adding extension (enabled: True): The module 'jupyter_server_mathjax' could not be found (No module named 'jupyter_server_mathjax'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_server_mathjax' could not be found (No module named 'jupyter_server_mathjax'). Are you sure the extension is installed?
+[I 2023-12-22 11:59:33.278 ServerApp] Package jupyter_server_terminals took 0.0154s to import
+[W 2023-12-22 11:59:33.278 ServerApp] jupyterlab_code_formatter | error adding extension (enabled: True): The module 'jupyterlab_code_formatter' could not be found (No module named 'jupyterlab_code_formatter'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyterlab_code_formatter' could not be found (No module named 'jupyterlab_code_formatter'). Are you sure the extension is installed?
+[W 2023-12-22 11:59:33.279 ServerApp] nbclassic | error adding extension (enabled: True): The module 'nbclassic' could not be found (No module named 'nbclassic'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'nbclassic' could not be found (No module named 'nbclassic'). Are you sure the extension is installed?
+[W 2023-12-22 11:59:33.280 ServerApp] nbdime | error adding extension (enabled: True): The module 'nbdime' could not be found (No module named 'nbdime'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'nbdime' could not be found (No module named 'nbdime'). Are you sure the extension is installed?
+[I 2023-12-22 11:59:33.280 ServerApp] Package notebook took 0.0000s to import
+[I 2023-12-22 11:59:33.283 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-12-22 11:59:33.283 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-12-22 11:59:33.284 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-12-22 11:59:33.288 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-12-22 11:59:33.294 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-12-22 11:59:33.302 ServerApp] notebook | extension was successfully linked.
+[W 2023-12-22 11:59:33.830 ServerApp] jupyter_nbextensions_configurator | error adding extension (enabled: True): The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_nbextensions_configurator' could not be found (No module named 'jupyter_nbextensions_configurator'). Are you sure the extension is installed?
+[W 2023-12-22 11:59:33.831 ServerApp] jupyterlab_code_formatter | error adding extension (enabled: True): The module 'jupyterlab_code_formatter' could not be found (No module named 'jupyterlab_code_formatter'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyterlab_code_formatter' could not be found (No module named 'jupyterlab_code_formatter'). Are you sure the extension is installed?
+[W 2023-12-22 11:59:33.832 ServerApp] nbdime | error adding extension (enabled: True): The module 'nbdime' could not be found (No module named 'nbdime'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 321, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 185, in __init__
+        self._load_metadata()
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 200, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'nbdime' could not be found (No module named 'nbdime'). Are you sure the extension is installed?
+[I 2023-12-22 11:59:33.833 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-12-22 11:59:33.919 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-12-22 11:59:33.923 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-12-22 11:59:33.924 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-12-22 11:59:33.935 LabApp] JupyterLab extension loaded from /usr/local/miniconda3/lib/python3.11/site-packages/jupyterlab
+[I 2023-12-22 11:59:33.935 LabApp] JupyterLab application directory is /usr/local/miniconda3/share/jupyter/lab
+[I 2023-12-22 11:59:33.936 LabApp] Extension Manager is 'pypi'.
+[I 2023-12-22 11:59:33.940 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-12-22 11:59:33.944 ServerApp] notebook | extension was successfully loaded.
+[I 2023-12-22 11:59:33.946 ServerApp] Serving notebooks from local directory: /Users/carl/Nextcloud/Admin/Travail/2021-formation-OpenClassrooms-Data Scientist/Projets/P7_scoring
+[I 2023-12-22 11:59:33.946 ServerApp] Jupyter Server 2.10.0 is running at:
+[I 2023-12-22 11:59:33.946 ServerApp] http://localhost:8888/lab?token=14208d020d16c26f1202f68216a5313e10ab00e753a76370
+[I 2023-12-22 11:59:33.946 ServerApp]     http://127.0.0.1:8888/lab?token=14208d020d16c26f1202f68216a5313e10ab00e753a76370
+[I 2023-12-22 11:59:33.946 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-12-22 11:59:33.963 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/carl/Library/Jupyter/runtime/jpserver-23103-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=14208d020d16c26f1202f68216a5313e10ab00e753a76370
+        http://127.0.0.1:8888/lab?token=14208d020d16c26f1202f68216a5313e10ab00e753a76370
+[I 2023-12-22 11:59:35.536 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2023-12-22 11:59:39.612 LabApp] Failed validating settings (@jupyterlab/notebook-extension:tracker): Additional properties are not allowed ('experimentalDisableDocumentWideUndoRedo', 'numberCellsToRenderDirectly', 'observedBottomMargin', 'observedTopMargin', 'remainingTimeBeforeRescheduling', 'renderCellOnIdle' were unexpected)
+    
+    Failed validating 'additionalProperties' in schema:
+        {'additionalProperties': False,
+         'definitions': {'kernelStatusConfig': {'additionalProperties': False,
+                                                'properties': {'showOnStatusBar': {'default': False,
+                                                                                   'description': 'If '
+                                                                                                  '`true`, '
+                                                                                                  'the '
+                                                                                                  'kernel '
+                                                                                                  'status '
+                                                                                                  'progression '
+                                                                                                  'will '
+                                                                                                  'be '
+                                                                                                  'displayed '
+                                                                                                  'in '
+                                                                                                  'the '
+                                                                                                  'status '
+                                                                                                  'bar '
+                                                                                                  'otherwise '
+                                                                                                  'it '
+                                                                                                  'will '
+                                                                                                  'be '
+                                                                                                  'in '
+                                                                                                  'the '
+                                                                                                  'toolbar.',
+                                                                                   'title': 'Show '
+                                                                                            'kernel '
+                                                                                            'status '
+                                                                                            'on '
+                                                                                            'toolbar '
+                                                                                            'or '
+                                                                                            'status '
+                                                                                            'bar.',
+                                                                                   'type': 'boolean'},
+                                                               'showProgress': {'default': True,
+                                                                                'title': 'Show '
+                                                                                         'execution '
+                                                                                         'progress.',
+                                                                                'type': 'boolean'}},
+                                                'type': 'object'}},
+         'description': 'Notebook settings.',
+         'jupyter.lab.menus': {'context': [{'rank': 0,
+                                            'selector': '.jp-Notebook .jp-Cell',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:cut-cell',
+                                            'rank': 1,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'command': 'notebook:copy-cell',
+                                            'rank': 2,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'command': 'notebook:paste-cell-below',
+                                            'rank': 3,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'rank': 4,
+                                            'selector': '.jp-Notebook .jp-Cell',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:delete-cell',
+                                            'rank': 5,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'rank': 6,
+                                            'selector': '.jp-Notebook .jp-Cell',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:split-cell-at-cursor',
+                                            'rank': 7,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'command': 'notebook:merge-cells',
+                                            'rank': 8,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'command': 'notebook:merge-cell-above',
+                                            'rank': 8,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'command': 'notebook:merge-cell-below',
+                                            'rank': 8,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-Cell'},
+                                           {'rank': 9,
+                                            'selector': '.jp-Notebook .jp-Cell',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:create-output-view',
+                                            'rank': 10,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-CodeCell'},
+                                           {'rank': 11,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-CodeCell',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:clear-cell-output',
+                                            'rank': 12,
+                                            'selector': '.jp-Notebook '
+                                                        '.jp-CodeCell'},
+                                           {'command': 'notebook:clear-all-cell-outputs',
+                                            'rank': 13,
+                                            'selector': '.jp-Notebook'},
+                                           {'rank': 20,
+                                            'selector': '.jp-Notebook',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:enable-output-scrolling',
+                                            'rank': 21,
+                                            'selector': '.jp-Notebook'},
+                                           {'command': 'notebook:disable-output-scrolling',
+                                            'rank': 22,
+                                            'selector': '.jp-Notebook'},
+                                           {'rank': 30,
+                                            'selector': '.jp-Notebook',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:undo-cell-action',
+                                            'rank': 31,
+                                            'selector': '.jp-Notebook'},
+                                           {'command': 'notebook:redo-cell-action',
+                                            'rank': 32,
+                                            'selector': '.jp-Notebook'},
+                                           {'command': 'notebook:restart-kernel',
+                                            'rank': 33,
+                                            'selector': '.jp-Notebook'},
+                                           {'rank': 40,
+                                            'selector': '.jp-Notebook',
+                                            'type': 'separator'},
+                                           {'command': 'notebook:create-console',
+                                            'rank': 41,
+                                            'selector': '.jp-Notebook'},
+                                           {'args': {'isContextMenu': True},
+                                            'command': 'notebook:create-new',
+                                            'rank': 52,
+                                            'selector': '.jp-DirListing-content'}],
+                               'main': [{'id': 'jp-mainmenu-file',
+                                         'items': [{'submenu': {'id': 'jp-mainmenu-file-new',
+                                                                'items': [{'command': 'notebook:create-new',
+                                                                           'rank': 10}]},
+                                                    'type': 'submenu'}]},
+                                        {'id': 'jp-mainmenu-edit',
+                                         'items': [{'rank': 4,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:undo-cell-action',
+                                                    'rank': 4},
+                                                   {'command': 'notebook:redo-cell-action',
+                                                    'rank': 4},
+                                                   {'rank': 5,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:cut-cell',
+                                                    'rank': 5},
+                                                   {'command': 'notebook:copy-cell',
+                                                    'rank': 5},
+                                                   {'command': 'notebook:paste-cell-below',
+                                                    'rank': 5},
+                                                   {'command': 'notebook:paste-cell-above',
+                                                    'rank': 5},
+                                                   {'command': 'notebook:paste-and-replace-cell',
+                                                    'rank': 5},
+                                                   {'rank': 6,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:delete-cell',
+                                                    'rank': 6},
+                                                   {'rank': 7,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:select-all',
+                                                    'rank': 7},
+                                                   {'command': 'notebook:deselect-all',
+                                                    'rank': 7},
+                                                   {'rank': 8,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:move-cell-up',
+                                                    'rank': 8},
+                                                   {'command': 'notebook:move-cell-down',
+                                                    'rank': 8},
+                                                   {'rank': 9,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:split-cell-at-cursor',
+                                                    'rank': 9},
+                                                   {'command': 'notebook:merge-cells',
+                                                    'rank': 9},
+                                                   {'command': 'notebook:merge-cell-above',
+                                                    'rank': 9},
+                                                   {'command': 'notebook:merge-cell-below',
+                                                    'rank': 9},
+                                                   {'rank': 9,
+                                                    'type': 'separator'}]},
+                                        {'id': 'jp-mainmenu-view',
+                                         'items': [{'rank': 10,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:hide-cell-code',
+                                                    'rank': 10},
+                                                   {'command': 'notebook:hide-cell-outputs',
+                                                    'rank': 10},
+                                                   {'command': 'notebook:hide-all-cell-code',
+                                                    'rank': 10},
+                                                   {'command': 'notebook:hide-all-cell-outputs',
+                                                    'rank': 10},
+                                                   {'rank': 10,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:show-cell-code',
+                                                    'rank': 11},
+                                                   {'command': 'notebook:show-cell-outputs',
+                                                    'rank': 11},
+                                                   {'command': 'notebook:show-all-cell-code',
+                                                    'rank': 11},
+                                                   {'command': 'notebook:show-all-cell-outputs',
+                                                    'rank': 11},
+                                                   {'rank': 11,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:toggle-render-side-by-side-current',
+                                                    'rank': 12},
+                                                   {'rank': 12,
+                                                    'type': 'separator'}]},
+                                        {'id': 'jp-mainmenu-run',
+                                         'items': [{'rank': 10,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:run-cell-and-insert-below',
+                                                    'rank': 10},
+                                                   {'command': 'notebook:run-cell',
+                                                    'rank': 10},
+                                                   {'command': 'notebook:run-in-console',
+                                                    'rank': 10},
+                                                   {'rank': 11,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:run-all-above',
+                                                    'rank': 11},
+                                                   {'command': 'notebook:run-all-below',
+                                                    'rank': 11},
+                                                   {'rank': 12,
+                                                    'type': 'separator'},
+                                                   {'command': 'notebook:render-all-markdown',
+                                                    'rank': 12},
+                                                   {'rank': 12,
+                                                    'type': 'separator'}]},
+                                        {'id': 'jp-mainmenu-kernel',
+                                         'items': [{'command': 'notebook:restart-and-run-to-selected',
+                                                    'rank': 1}]}]},
+         'jupyter.lab.setting-icon': 'ui-components:notebook',
+         'jupyter.lab.setting-icon-label': 'Notebook',
+         'jupyter.lab.shortcuts': [{'command': 'notebook:change-cell-to-code',
+                                    'keys': ['Y'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-1',
+                                    'keys': ['1'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-2',
+                                    'keys': ['2'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-3',
+                                    'keys': ['3'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-4',
+                                    'keys': ['4'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-5',
+                                    'keys': ['5'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-heading-6',
+                                    'keys': ['6'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-markdown',
+                                    'keys': ['M'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:change-cell-to-raw',
+                                    'keys': ['R'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:copy-cell',
+                                    'keys': ['C'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:cut-cell',
+                                    'keys': ['X'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:delete-cell',
+                                    'keys': ['D', 'D'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:enter-command-mode',
+                                    'keys': ['Escape'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:enter-command-mode',
+                                    'keys': ['Ctrl M'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:enter-edit-mode',
+                                    'keys': ['Enter'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-above',
+                                    'keys': ['Shift ArrowUp'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-above',
+                                    'keys': ['Shift K'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-top',
+                                    'keys': ['Shift Home'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-below',
+                                    'keys': ['Shift ArrowDown'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-bottom',
+                                    'keys': ['Shift End'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:extend-marked-cells-below',
+                                    'keys': ['Shift J'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:insert-cell-above',
+                                    'keys': ['A'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:insert-cell-below',
+                                    'keys': ['B'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:merge-cells',
+                                    'keys': ['Shift M'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:merge-cell-above',
+                                    'keys': ['Ctrl Backspace'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:merge-cell-below',
+                                    'keys': ['Ctrl Shift M'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:move-cursor-down',
+                                    'keys': ['ArrowDown'],
+                                    'selector': '[data-jp-traversable]:focus'},
+                                   {'command': 'notebook:move-cursor-down',
+                                    'keys': ['J'],
+                                    'selector': '[data-jp-traversable]:focus'},
+                                   {'command': 'notebook:move-cursor-up',
+                                    'keys': ['ArrowUp'],
+                                    'selector': '[data-jp-traversable]:focus'},
+                                   {'command': 'notebook:move-cursor-up',
+                                    'keys': ['K'],
+                                    'selector': '[data-jp-traversable]:focus'},
+                                   {'command': 'notebook:move-cursor-heading-above-or-collapse',
+                                    'keys': ['ArrowLeft'],
+                                    'selector': '.jp-Notebook:focus.jp-mod-commandMode'},
+                                   {'command': 'notebook:move-cursor-heading-below-or-expand',
+                                    'keys': ['ArrowRight'],
+                                    'selector': '.jp-Notebook:focus.jp-mod-commandMode'},
+                                   {'command': 'notebook:insert-heading-above',
+                                    'keys': ['Shift A'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:insert-heading-below',
+                                    'keys': ['Shift B'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:collapse-all-headings',
+                                    'keys': ['Ctrl Shift ArrowLeft'],
+                                    'selector': '.jp-Notebook.jp-mod-commandMode'},
+                                   {'command': 'notebook:expand-all-headings',
+                                    'keys': ['Ctrl Shift ArrowRight'],
+                                    'selector': '.jp-Notebook.jp-mod-commandMode'},
+                                   {'command': 'notebook:paste-cell-below',
+                                    'keys': ['V'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:redo-cell-action',
+                                    'keys': ['Shift Z'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:run-cell',
+                                    'keys': [],
+                                    'macKeys': ['Ctrl Enter'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:run-cell',
+                                    'keys': [],
+                                    'macKeys': ['Ctrl Enter'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:run-cell',
+                                    'keys': ['Accel Enter'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:run-cell',
+                                    'keys': ['Accel Enter'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:run-cell-and-insert-below',
+                                    'keys': ['Alt Enter'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:run-cell-and-insert-below',
+                                    'keys': ['Alt Enter'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:run-in-console',
+                                    'keys': [''],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:run-cell-and-select-next',
+                                    'keys': ['Shift Enter'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'viewmenu:line-numbering',
+                                    'keys': ['Shift L'],
+                                    'selector': '.jp-Notebook.jp-mod-commandMode'},
+                                   {'command': 'viewmenu:match-brackets',
+                                    'keys': [''],
+                                    'selector': '.jp-Notebook.jp-mod-commandMode'},
+                                   {'command': 'notebook:select-all',
+                                    'keys': ['Accel A'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:split-cell-at-cursor',
+                                    'keys': ['Ctrl Shift -'],
+                                    'selector': '.jp-Notebook.jp-mod-editMode'},
+                                   {'command': 'notebook:toggle-all-cell-line-numbers',
+                                    'keys': ['Shift L'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:undo-cell-action',
+                                    'keys': ['Z'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:toggle-render-side-by-side-current',
+                                    'keys': ['Shift R'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:move-cell-up',
+                                    'keys': ['Ctrl Shift ArrowUp'],
+                                    'selector': '.jp-Notebook:focus'},
+                                   {'command': 'notebook:move-cell-down',
+                                    'keys': ['Ctrl Shift ArrowDown'],
+                                    'selector': '.jp-Notebook:focus'}],
+         'properties': {'autoStartDefaultKernel': {'default': False,
+                                                   'description': 'Whether to '
+                                                                  'automatically '
+                                                                  'start the '
+                                                                  'preferred '
+                                                                  'kernel.',
+                                                   'title': 'Automatically '
+                                                            'Start Preferred '
+                                                            'Kernel',
+                                                   'type': 'boolean'},
+                        'codeCellConfig': {'default': {'lineNumbers': False,
+                                                       'lineWrap': False},
+                                           'description': 'The configuration '
+                                                          'for all code cells; '
+                                                          'it will override '
+                                                          'the CodeMirror '
+                                                          'default '
+                                                          'configuration.',
+                                           'title': 'Code Cell Configuration',
+                                           'type': 'object'},
+                        'defaultCell': {'default': 'code',
+                                        'description': 'The default type '
+                                                       '(markdown, code, or '
+                                                       'raw) for new cells',
+                                        'enum': ['code', 'markdown', 'raw'],
+                                        'title': 'Default cell type',
+                                        'type': 'string'},
+                        'documentWideUndoRedo': {'default': False,
+                                                 'description': 'Enables the '
+                                                                'undo/redo '
+                                                                'actions at '
+                                                                'the notebook '
+                                                                'document '
+                                                                'level; aka '
+                                                                'undoing '
+                                                                'within a cell '
+                                                                'may undo the '
+                                                                'latest '
+                                                                'notebook '
+                                                                'change that '
+                                                                'happen in '
+                                                                'another cell. '
+                                                                'This is '
+                                                                'deprecated '
+                                                                'and will be '
+                                                                'removed in '
+                                                                '5.0.0.',
+                                                 'title': 'Enable undo/redo '
+                                                          'actions at the '
+                                                          'notebook document '
+                                                          'level.',
+                                                 'type': 'boolean'},
+                        'inputHistoryScope': {'default': 'global',
+                                              'description': 'Whether the line '
+                                                             'history for '
+                                                             'standard input '
+                                                             '(e.g. the ipdb '
+                                                             'prompt) should '
+                                                             'kept separately '
+                                                             'for different '
+                                                             'kernel sessions '
+                                                             '(`session`) or '
+                                                             'combined '
+                                                             '(`global`).',
+                                              'enum': ['global', 'session'],
+                                              'title': 'Input History Scope',
+                                              'type': 'string'},
+                        'kernelShutdown': {'default': False,
+                                           'description': 'Whether to shut '
+                                                          'down or not the '
+                                                          'kernel when closing '
+                                                          'a notebook.',
+                                           'title': 'Shut down kernel',
+                                           'type': 'boolean'},
+                        'kernelStatus': {'$ref': '#/definitions/kernelStatusConfig',
+                                         'default': {'showOnStatusBar': False,
+                                                     'showProgress': True},
+                                         'description': 'Defines the position '
+                                                        'and components of '
+                                                        'execution progress '
+                                                        'indicator.',
+                                         'title': 'Kernel status icon '
+                                                  'configuration'},
+                        'markdownCellConfig': {'default': {'lineNumbers': False,
+                                                           'matchBrackets': False},
+                                               'description': 'The '
+                                                              'configuration '
+                                                              'for all '
+                                                              'markdown cells; '
+                                                              'it will '
+                                                              'override the '
+                                                              'CodeMirror '
+                                                              'default '
+                                                              'configuration.',
+                                               'title': 'Markdown Cell '
+                                                        'Configuration',
+                                               'type': 'object'},
+                        'maxNumberOutputs': {'default': 50,
+                                             'description': 'Defines the '
+                                                            'maximum number of '
+                                                            'output cells to '
+                                                            'be rendered in '
+                                                            'the output area '
+                                                            'for cells with '
+                                                            'many outputs. The '
+                                                            'output area will '
+                                                            'have a head and '
+                                                            'the remaining '
+                                                            'outputs will be '
+                                                            'trimmed and not '
+                                                            'displayed unless '
+                                                            'the user clicks '
+                                                            'on the '
+                                                            'information '
+                                                            'message. Set to 0 '
+                                                            'to have the '
+                                                            'complete display.',
+                                             'title': 'The maximum number of '
+                                                      'output cells to be '
+                                                      'rendered in the output '
+                                                      'area.',
+                                             'type': 'number'},
+                        'overscanCount': {'default': 1,
+                                          'description': "In 'full' windowing "
+                                                         'mode, this is the '
+                                                         'number of cells '
+                                                         'above and below the '
+                                                         'viewport.',
+                                          'minimum': 1,
+                                          'title': 'Number of cells to render '
+                                                   'outside de the viewport',
+                                          'type': 'number'},
+                        'rawCellConfig': {'default': {'lineNumbers': False,
+                                                      'matchBrackets': False},
+                                          'description': 'The configuration '
+                                                         'for all raw cells; '
+                                                         'it will override the '
+                                                         'CodeMirror default '
+                                                         'configuration.',
+                                          'title': 'Raw Cell Configuration',
+                                          'type': 'object'},
+                        'recordTiming': {'default': False,
+                                         'description': 'Should timing data be '
+                                                        'recorded in cell '
+                                                        'metadata',
+                                         'title': 'Recording timing',
+                                         'type': 'boolean'},
+                        'renderingLayout': {'default': 'default',
+                                            'description': 'Global setting to '
+                                                           'define the '
+                                                           'rendering layout '
+                                                           'in notebooks. '
+                                                           "'default' or "
+                                                           "'side-by-side' are "
+                                                           'supported.',
+                                            'enum': ['default', 'side-by-side'],
+                                            'title': 'Rendering Layout'},
+                        'scrollPastEnd': {'default': True,
+                                          'description': 'Whether to be able '
+                                                         'to scroll so the '
+                                                         'last cell is at the '
+                                                         'top of the panel',
+                                          'title': 'Scroll past last cell',
+                                          'type': 'boolean'},
+                        'showEditorForReadOnlyMarkdown': {'default': True,
+                                                          'description': 'Should '
+                                                                         'an '
+                                                                         'editor '
+                                                                         'be '
+                                                                         'shown '
+                                                                         'for '
+                                                                         'read-only '
+                                                                         'markdown',
+                                                          'title': 'Show '
+                                                                   'editor for '
+                                                                   'read-only '
+                                                                   'Markdown '
+                                                                   'cells',
+                                                          'type': 'boolean'},
+                        'showHiddenCellsButton': {'default': True,
+                                                  'description': 'If set to '
+                                                                 'true, a '
+                                                                 'button is '
+                                                                 'shown below '
+                                                                 'collapsed '
+                                                                 'headings, '
+                                                                 'indicating '
+                                                                 'how many '
+                                                                 'cells are '
+                                                                 'hidden '
+                                                                 'beneath the '
+                                                                 'collapsed '
+                                                                 'heading.',
+                                                  'title': 'Show hidden cells '
+                                                           'button if '
+                                                           'collapsed',
+                                                  'type': 'boolean'},
+                        'sideBySideLeftMarginOverride': {'default': '10px',
+                                                         'description': 'Side-by-side '
+                                                                        'left '
+                                                                        'margin '
+                                                                        'override.',
+                                                         'title': 'Side-by-side '
+                                                                  'left margin '
+                                                                  'override',
+                                                         'type': 'string'},
+                        'sideBySideOutputRatio': {'default': 1,
+                                                  'description': 'For the '
+                                                                 'side-by-side '
+                                                                 'rendering, '
+                                                                 'the '
+                                                                 'side-by-side '
+                                                                 'output ratio '
+                                                                 'defines the '
+                                                                 'width of the '
+                                                                 'output vs '
+                                                                 'the input. '
+                                                                 'Set 1 for '
+                                                                 'same size, > '
+                                                                 '1 for larger '
+                                                                 'output, < 1 '
+                                                                 'for smaller '
+                                                                 'output.',
+                                                  'minimum': 0,
+                                                  'title': 'Side-by-side '
+                                                           'output ratio',
+                                                  'type': 'number'},
+                        'sideBySideRightMarginOverride': {'default': '10px',
+                                                          'description': 'Side-by-side '
+                                                                         'right '
+                                                                         'margin '
+                                                                         'override.',
+                                                          'title': 'Side-by-side '
+                                                                   'right '
+                                                                   'margin '
+                                                                   'override',
+                                                          'type': 'string'},
+                        'windowingMode': {'default': 'defer',
+                                          'description': "'defer': Improve "
+                                                         'loading time - Wait '
+                                                         'for idle CPU cycles '
+                                                         'to attach out of '
+                                                         'viewport cells - '
+                                                         "'full': Best "
+                                                         'performance with '
+                                                         'side effects - '
+                                                         'Attach to the DOM '
+                                                         'only cells in '
+                                                         "viewport - 'none': "
+                                                         'Worst performance '
+                                                         'without side effects '
+                                                         '- Attach all cells '
+                                                         'to the viewport',
+                                          'enum': ['defer', 'full', 'none'],
+                                          'title': 'Windowing mode'}},
+         'title': 'Notebook',
+         'type': 'object'}
+    
+    On instance:
+        {'codeCellConfig': {'autoClosingBrackets': True,
+                            'codeFolding': False,
+                            'cursorBlinkRate': 530,
+                            'fontFamily': None,
+                            'fontSize': None,
+                            'insertSpaces': True,
+                            'lineHeight': None,
+                            'lineNumbers': False,
+                            'lineWiseCopyCut': True,
+                            'lineWrap': 'off',
+                            'matchBrackets': True,
+                            'readOnly': False,
+                            'rulers': [],
+                            'showTrailingSpace': False,
+                            'tabSize': 4,
+                            'wordWrapColumn': 80},
+         'defaultCell': 'code',
+         'experimentalDisableDocumentWideUndoRedo': False,
+         'kernelShutdown': False,
+         'kernelStatus': {'showOnStatusBar': False, 'showProgress': True},
+         'markdownCellConfig': {'autoClosingBrackets': True,
+                                'codeFolding': False,
+                                'cursorBlinkRate': 530,
+                                'fontFamily': None,
+                                'fontSize': None,
+                                'insertSpaces': True,
+                                'lineHeight': None,
+                                'lineNumbers': False,
+                                'lineWiseCopyCut': True,
+                                'lineWrap': 'on',
+                                'matchBrackets': False,
+                                'readOnly': False,
+                                'rulers': [],
+                                'showTrailingSpace': False,
+                                'tabSize': 4,
+                                'wordWrapColumn': 80},
+         'maxNumberOutputs': 50,
+         'numberCellsToRenderDirectly': 99999,
+         'observedBottomMargin': '1000px',
+         'observedTopMargin': '1000px',
+         'rawCellConfig': {'autoClosingBrackets': False,
+                           'codeFolding': False,
+                           'cursorBlinkRate': 530,
+                           'fontFamily': None,
+                           'fontSize': None,
+                           'insertSpaces': True,
+                           'lineHeight': None,
+                           'lineNumbers': False,
+                           'lineWiseCopyCut': True,
+                           'lineWrap': 'on',
+                           'matchBrackets': False,
+                           'readOnly': False,
+                           'rulers': [],
+                           'showTrailingSpace': False,
+                           'tabSize': 4,
+                           'wordWrapColumn': 80},
+         'recordTiming': False,
+         'remainingTimeBeforeRescheduling': 50,
+         'renderCellOnIdle': True,
+         'renderingLayout': 'default',
+         'scrollPastEnd': True,
+         'showEditorForReadOnlyMarkdown': True,
+         'sideBySideLeftMarginOverride': '10px',
+         'sideBySideOutputRatio': 1,
+         'sideBySideRightMarginOverride': '10px'}
+[I 2023-12-22 11:59:42.031 LabApp] Build is up to date
+[W 2023-12-22 11:59:42.448 ServerApp] 404 GET /jupyterlab_code_formatter/formatters?1703242782323 (e078c93793e24de7ae749107cf361256@127.0.0.1) 79.11ms referer=http://localhost:8888/lab
+[W 2023-12-22 11:59:42.476 ServerApp] 404 GET /api/contents/P7_01_EDA.ipynb?content=0&1703242782462 (127.0.0.1): No such file or directory: P7_01_EDA.ipynb
+[W 2023-12-22 11:59:42.476 ServerApp] wrote error: 'No such file or directory: P7_01_EDA.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+                ^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 189, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/filemanager.py", line 863, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: P7_01_EDA.ipynb)
+[W 2023-12-22 11:59:42.486 ServerApp] 404 GET /api/contents/P7_01_EDA.ipynb?content=0&1703242782462 (e078c93793e24de7ae749107cf361256@127.0.0.1) 13.48ms referer=http://localhost:8888/lab
+[W 2023-12-22 11:59:42.487 ServerApp] 404 GET /api/contents/lightgbm_with_simple_features.py?content=0&1703242782463 (127.0.0.1): No such file or directory: lightgbm_with_simple_features.py
+[W 2023-12-22 11:59:42.487 ServerApp] wrote error: 'No such file or directory: lightgbm_with_simple_features.py'
+    Traceback (most recent call last):
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+                ^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 189, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/usr/local/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/filemanager.py", line 863, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: lightgbm_with_simple_features.py)
+[W 2023-12-22 11:59:42.491 ServerApp] 404 GET /api/contents/lightgbm_with_simple_features.py?content=0&1703242782463 (e078c93793e24de7ae749107cf361256@127.0.0.1) 16.69ms referer=http://localhost:8888/lab
+[W 2023-12-22 11:59:58.414 ServerApp] Notebook notebooks/P7_04_modeling.ipynb is not trusted
+[I 2023-12-22 12:00:00.515 ServerApp] Kernel started: 08df2fa0-f282-4d01-b807-387048183703
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2023-12-22 12:00:03.306 ServerApp] Connecting to kernel 08df2fa0-f282-4d01-b807-387048183703.
+[I 2023-12-22 12:00:03.329 ServerApp] Connecting to kernel 08df2fa0-f282-4d01-b807-387048183703.
+[I 2023-12-22 12:00:03.356 ServerApp] Connecting to kernel 08df2fa0-f282-4d01-b807-387048183703.
+[W 2023-12-22 12:00:03.446 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x10b07e610>
+[W 2023-12-22 12:09:59.491 ServerApp] 404 POST /jupyterlab_code_formatter/format?1703243399460 (e078c93793e24de7ae749107cf361256@127.0.0.1) 14.19ms referer=http://localhost:8888/lab/tree/notebooks/P7_04_modeling.ipynb
+[I 2023-12-22 12:31:33.128 ServerApp] Kernel shutdown: 08df2fa0-f282-4d01-b807-387048183703
+[I 2023-12-22 12:31:34.409 ServerApp] Shutting down on /api/shutdown request.
+[I 2023-12-22 12:31:34.413 ServerApp] Shutting down 5 extensions

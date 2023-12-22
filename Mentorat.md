@@ -6,16 +6,18 @@
 - [x] github
 - [x] dir data, notebooks, requirement, readme, src/init.py fonctions
 - [x] problème imbalanced classes for training : manuellement équilibrer classes
-## pour semaine suivante
-- [ ] split notebooks EDA, preprocessing, modeling
-- [ ] pipeline
+## 2023-12-22
+- [x] split notebooks EDA, preprocessing, modeling
+- [x] pipeline
     - limite data leakage
     - imblearn
-- [ ] GridSearch(plusieurs pipelines avec param differents)
-- [ ] KPI : accuracy ? matrice de confusion (rappel, précision, F-1 score, AUROC)
-- [ ] changelog
-- [ ] machinelearnia video pipeline
-- [ ] 1e heure de https://yewtu.be/watch?v=0B5eIE_1vpU 
+- [x] GridSearch(plusieurs pipelines avec param differents)
+- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
+- [ ] regarder machinelearnia video pipeline
+- [x] regarder 1e heure de [Scikit-Learn Crash course](https://yewtu.be/watch?v=0B5eIE_1vpU) 
+- [ ] faire vrai changelog ?
+## 2023-12-29
+
 
 ## later
 - [ ] rectifieur de classes dans le pipeline
