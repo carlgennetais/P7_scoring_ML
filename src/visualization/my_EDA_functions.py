@@ -4,7 +4,7 @@ import math
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 import seaborn as sns
-from anytree import Node, RenderTree
+# from anytree import Node, RenderTree
 # machine learning
 from sklearn import decomposition
 
@@ -90,41 +90,41 @@ def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
     plt.show();
 
 
-def build_tree(df):
-    """
-    Build a tree from dataframe, with right-most cell as children 
-    and left-most cell as parent. Uses Anytree library
-    """
-    # clean duplicated lines
-    viz_categories = df.drop_duplicates()
-    # create root node
-    root_categories = Node("categories")
-    # read cell by cell and build tree
-    for i in range(0, viz_categories.shape[0]):
-        for j in range(0, viz_categories.shape[1]):
-            # if not empty and not already a Node
-            if pd.notna(viz_categories.iloc[i, j]) and (
-                    viz_categories.iloc[i, j] not in locals()
-                    ):
-                # for first level, attach to root
-                if j == 0:
-                    locals()[viz_categories.iloc[i, j]] = Node(
-                            viz_categories.iloc[i, j], parent=root_categories
-                            )
-                # attach to n-1 parent
-            else:
-                locals()[viz_categories.iloc[i, j]] = Node(
-                        viz_categories.iloc[i, j],
-                        parent=locals()[viz_categories.iloc[i, j - 1]],
-                        )
-    return root_categories
+# def build_tree(df):
+#     """
+#     Build a tree from dataframe, with right-most cell as children 
+#     and left-most cell as parent. Uses Anytree library
+#     """
+#     # clean duplicated lines
+#     viz_categories = df.drop_duplicates()
+#     # create root node
+#     root_categories = Node("categories")
+#     # read cell by cell and build tree
+#     for i in range(0, viz_categories.shape[0]):
+#         for j in range(0, viz_categories.shape[1]):
+#             # if not empty and not already a Node
+#             if pd.notna(viz_categories.iloc[i, j]) and (
+#                     viz_categories.iloc[i, j] not in locals()
+#                     ):
+#                 # for first level, attach to root
+#                 if j == 0:
+#                     locals()[viz_categories.iloc[i, j]] = Node(
+#                             viz_categories.iloc[i, j], parent=root_categories
+#                             )
+#                 # attach to n-1 parent
+#             else:
+#                 locals()[viz_categories.iloc[i, j]] = Node(
+#                         viz_categories.iloc[i, j],
+#                         parent=locals()[viz_categories.iloc[i, j - 1]],
+#                         )
+#     return root_categories
 
-def print_tree(tree, levels=2):
-    """
-    Print tree using Anytree library
-    """
-    for pre, fill, node in RenderTree(tree, maxlevel=levels):
-        print("%s%s" % (pre, node.name))
+# def print_tree(tree, levels=2):
+#     """
+#     Print tree using Anytree library
+#     """
+#     for pre, fill, node in RenderTree(tree, maxlevel=levels):
+#         print("%s%s" % (pre, node.name))
 
 # source : https://www.statology.org/seaborn-barplot-show-values/
 def show_values(axs, orient="v", space=0.01):
