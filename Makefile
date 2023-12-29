@@ -27,7 +27,12 @@ requirements: test_environment
 
 ## Make Dataset
 data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
+	# $(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
+	mkdir -p data/raw data/processed data/external data/interim
+	curl https://s3-eu-west-1.amazonaws.com/static.oc-static.com/prod/courses/files/Parcours_data_scientist/Projet+-+Impl%C3%A9menter+un+mod%C3%A8le+de+scoring/Projet+Mise+en+prod+-+home-credit-default-risk.zip -o ./data/raw/data.zip
+	unzip data/raw/data.zip -d data/raw
+	rm -f data/raw/data.zip
+	ls -lS data/raw
 
 ## Delete all compiled Python files
 clean:
