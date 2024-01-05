@@ -15,7 +15,7 @@
 - [ ] regarder machinelearnia video pipeline
 - [x] regarder 1e heure de [Scikit-Learn Crash course](https://yewtu.be/watch?v=0B5eIE_1vpU) 
 - [ ] faire vrai changelog ?
-## 2023-12-29
+## 2023-12-29 + 2024-01-05
 - [ ] shap values
 - [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 	- Fbeta measure ?
@@ -27,6 +27,10 @@
     - saisie biens
 - [ ] datadrift avec librairie Evidently pour monitorer changements dans le temps
     - detecte gros changemnts entre train et est
+- Questions :
+    - loan amount et annuity mais pas la durée ?
+
+## semaine prochaine
 
 ## later
 - [x] rectifieur de classes dans le pipeline

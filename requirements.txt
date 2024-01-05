@@ -16,3 +16,5 @@ scikit-learn
 matplotlib
 missingno 
 imblearn
+evidently
+shap
