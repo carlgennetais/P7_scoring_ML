@@ -19,14 +19,13 @@
 - [ ] shap values
 - [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 	- Fbeta measure ?
-- [ ] fonction metier pour calculer gain/pertes avec y_pred/y
+- [x] fonction metier pour calculer gain/pertes avec y_pred/y
     - si vrai neg : taux d'interet * montant pret
     - si vrai pos : 0
     - si faux neg : perte 25%
 - [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
     - saisie biens
-- [ ] datadrift avec librairie Evidently pour monitorer changements dans le temps
-    - detecte gros changemnts entre train et est
+- [x] datadrift avec librairie Evidently pour monitorer changements dans le temps entre train et test
 - Questions :
     - loan amount et annuity mais pas la durée ?
 

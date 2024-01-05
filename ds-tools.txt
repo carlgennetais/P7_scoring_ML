@@ -1,0 +1,6 @@
+jupyterlab-git
+jupyterlab_execute_time
+jupyterlab-vim
+jupyterlab_code_formatter
+isort
+black
