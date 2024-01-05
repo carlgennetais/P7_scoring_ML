@@ -16,15 +16,15 @@
 - [x] regarder 1e heure de [Scikit-Learn Crash course](https://yewtu.be/watch?v=0B5eIE_1vpU) 
 - [ ] faire vrai changelog ?
 ## 2023-12-29 + 2024-01-05
-- [ ] shap values
+- [x] shap values
 - [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 	- Fbeta measure ?
 - [x] fonction metier pour calculer gain/pertes avec y_pred/y
     - si vrai neg : taux d'interet * montant pret
     - si vrai pos : 0
     - si faux neg : perte 25%
+        - saisie biens
 - [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
-    - saisie biens
 - [x] datadrift avec librairie Evidently pour monitorer changements dans le temps entre train et test
 - Questions :
     - loan amount et annuity mais pas la durée ?
