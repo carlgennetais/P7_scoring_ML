@@ -38,9 +38,9 @@
     - [x]/hello ou /ping : pour test
     - [x]/listcustomers : list des clients, liste json des ids users
     - [x]?id=14 : vecteur utils
-    - [ ]/predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
+    - [x]/predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
     - [ ]/shap?id=14 : json avec dico 2 keys :
-        -  pour 1 : comtributions de chaqaue valeur
+        -  pour 1 : contributions de chaque valeur
         -  pour 0
     - [ ] fonction qui extrait un vecteur
     - [x] etat general de la pop : describe en json
