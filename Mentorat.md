@@ -25,7 +25,6 @@
 - [x] datadrift avec librairie Evidently pour monitorer changements dans le temps entre train et test
 ## 2024-01-12
 - [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
-	- Fbeta measure ?
 - [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [ ] terminer shap values pour 1 individu
 - [ ] commencer API
@@ -36,15 +35,15 @@
 - streamlit pour front
 - regarder figma maquettes
 - routes API :
-    - /hello ou /ping : pour test
-    - /listcustomers : list des clients, liste json des ids users
-    - ?id=14 : vecteur utils
-    - /predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
-    - /shap?id=14 : json avec dico 2 keys :
+    - [x]/hello ou /ping : pour test
+    - [x]/listcustomers : list des clients, liste json des ids users
+    - [x]?id=14 : vecteur utils
+    - [ ]/predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
+    - [ ]/shap?id=14 : json avec dico 2 keys :
         -  pour 1 : comtributions de chaqaue valeur
         -  pour 0
-    - fonction qui extraie un vecteur
-    - etat general de la pop : describe en json
+    - [ ] fonction qui extrait un vecteur
+    - [x] etat general de la pop : describe en json
 - [x] lire liens
 - [x] comprende evidently
 - planning
