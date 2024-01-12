@@ -17,17 +17,41 @@
 - [ ] faire vrai changelog ?
 ## 2023-12-29 + 2024-01-05
 - [x] shap values
-- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
-	- Fbeta measure ?
 - [x] fonction metier pour calculer gain/pertes avec y_pred/y
     - si vrai neg : taux d'interet * montant pret
     - si vrai pos : 0
     - si faux neg : perte 25%
         - saisie biens
-- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [x] datadrift avec librairie Evidently pour monitorer changements dans le temps entre train et test
-- Questions :
-    - loan amount et annuity mais pas la durée ?
+## 2024-01-12
+- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
+	- Fbeta measure ?
+- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
+- [ ] terminer shap values pour 1 individu
+- [ ] commencer API
+    - django (py)
+    - flask (py)
+    - fast (py, pas de templating, renvoie json)
+    - ruby on rails
+- streamlit pour front
+- regarder figma maquettes
+- routes API :
+    - /hello ou /ping : pour test
+    - /listcustomers : list des clients, liste json des ids users
+    - ?id=14 : vecteur utils
+    - /predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
+    - /shap?id=14 : json avec dico 2 keys :
+        -  pour 1 : comtributions de chaqaue valeur
+        -  pour 0
+    - fonction qui extraie un vecteur
+    - etat general de la pop : describe en json
+- [x] lire liens
+- [x] comprende evidently
+- planning
+    - 1 semaine api/back
+    - 1 semaine front
+    - 1 semaine prod
+    - 1 semaine devOps, test operationnels et mise en prod
 
 ## semaine prochaine
 

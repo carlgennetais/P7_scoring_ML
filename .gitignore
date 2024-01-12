@@ -90,3 +90,4 @@ target/
 
 *.out
 .jupyter/
+**/*.jupyterlab-workspace
