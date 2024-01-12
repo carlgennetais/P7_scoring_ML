@@ -92,3 +92,7 @@ target/
 .jupyter/
 **/*.jupyterlab-workspace
 .virtual_documents/
+
+
+
+.venv
