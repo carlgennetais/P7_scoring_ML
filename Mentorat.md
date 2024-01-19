@@ -44,8 +44,8 @@
         -  pour 1 : contributions de chaque valeur
         -  pour 0
     - [ ] fonction qui extrait un vecteur
-## semaine prochaine
-- [ ] 
+## 2024-01-26
+- [ ] faire front sur streamlit (route par route)
 
 ## later
 - [ ] optimisation paramètres
