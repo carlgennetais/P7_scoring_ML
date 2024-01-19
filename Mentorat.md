@@ -30,6 +30,7 @@
 - [x] lire liens
 - [x] comprende evidently
 ## 2024-01-19
+- [x] split in 3 repos
 - [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 - [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [ ] terminer shap values pour 1 individu
