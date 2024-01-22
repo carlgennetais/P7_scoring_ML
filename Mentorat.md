@@ -35,17 +35,23 @@
 - [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [ ] terminer shap values pour 1 individu
 - [ ] routes API :
-    - [x]/hello ou /ping : pour test
-    - [x]/listcustomers : list des clients, liste json des ids users
-    - [x]?id=14 : vecteur utils
-    - [x]/predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
+    - [x] /hello ou /ping : pour test
+    - [x] /listcustomers : list des clients, liste json des ids users
+    - [x] ?id=14 : vecteur utils
+    - [x] /predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
     - [x] etat general de la pop : describe en json
-    - [ ]/shap?id=14 : json avec dico 2 keys :
+    - [x] /shap?id=14 : json avec dico 2 keys :
         -  pour 1 : contributions de chaque valeur
         -  pour 0
     - [ ] fonction qui extrait un vecteur
 ## 2024-01-26
 - [ ] faire front sur streamlit (route par route)
+    - [x] /hello ou /ping : pour test
+    - [x] /listcustomers : list des clients, liste json des ids users
+    - [x] ?id=14 : vecteur utils
+    - [x] /predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
+    - [x] etat general de la pop : describe en json
+    - [x] /shap?id=14 : json avec dico 2 keys :
 
 ## later
 - [ ] optimisation paramètres
