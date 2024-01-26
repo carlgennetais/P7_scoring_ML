@@ -1,5 +1,3 @@
-# TODO
-## 2023-12-08
 - [x] MVP EDA, feature engineering et modeling
 ## 2023-12-15
 - [x] vscode
@@ -31,10 +29,8 @@
 - [x] comprende evidently
 ## 2024-01-19
 - [x] split in 3 repos
-- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
-- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
-- [ ] terminer shap values pour 1 individu
-- [ ] routes API :
+- [x] terminer shap values pour 1 individu
+- [x] routes API :
     - [x] /hello ou /ping : pour test
     - [x] /listcustomers : list des clients, liste json des ids users
     - [x] ?id=14 : vecteur utils
@@ -45,6 +41,8 @@
         -  pour 0
     - [ ] fonction qui extrait un vecteur
 ## 2024-01-26
+- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
+- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [ ] faire front sur streamlit (route par route)
     - [x] /hello ou /ping : pour test
     - [x] /listcustomers : list des clients, liste json des ids users
