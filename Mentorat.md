@@ -1,3 +1,4 @@
+# Changelog, Todo and notes from Mentorat
 - [x] MVP EDA, feature engineering et modeling
 ## 2023-12-15
 - [x] vscode
