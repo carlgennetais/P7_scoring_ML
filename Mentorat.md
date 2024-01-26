@@ -53,12 +53,56 @@
     - [x] /shap?id=14 : json avec dico 2 keys :
 
 ## later
+- [ ] corriger front
+	- [ ] enlever All
+	- [ ] limiter a 100 cust
+	- [ ] afficher uniquement les 20 top features
+	- [ ] afficher les 20 premieres colonnes
+	- [ ] remplacer str + str par `f"text {variable}"`
+- [ ] dossier tests dans back (normalement se fait en mm tps ou avant code : TDD)
+	- [ ] idealement 80% test coverage
+	- [ ] pytest module
+	- [ ] tester chaque fonction (tests unitaires)
+		- dtype du return (`isInstance()`)
+		- shape
+		- test des valeurs sur un ID en particulier
+		- verifier type casting des params
+		- codes erreurs si params incorrects
+		- predict : ne pas tester valeur qui peut changer avec modele, juste type
+	- [ ] tester API (pas en live) (test integration ou fonctionnel)
+		- mock fictive de API pour faire requests
+	- [ ] passer tests avant push github
+		- github actions
+			- CI.yaml (voir IAS : ecrire fichiers .conf)
+				- verifie une branche
+				- evenement trigger : on push, merge
+				- instance python3.xx, pip install -r requirements 
+			- CD.yaml (continous devpt)
+				- n'ecoute que main (pas push mais releases)
+				- si les tests QA et pytest sont OK, deploie
+				- wget sur endpoint secret va declencher MaJ (tokens dans github secrets)
+			- YT: cookie connecte devOps
+			- tests black et
+			- par default github actions ne bloque pas le push, donc utiliser PR avec acceptation manuelle
+		- circle CI, Trevis CI (continous integration, DevOps)
+		- Jenkins
+- [ ] atasayan github workflow
+	- ne jamais dvlper sur main mais sur dev, ou branch features, qu'on merge ensuite sur dev
+	- prendre l'habitude de faire des Push Requests de dev vers main
+- [ ] ecrire docstrings
 - [ ] optimisation paramètres
 - [ ] ecrire README etc
 - [ ] poetry gestion venv
 - [ ] changelog
 
 # Notes
+- tests
+	- unitaires : plus petite unite de fonction
+	- fonctionnels : plusieurs fonctions d'un coup
+	- integration : parcours utilisateurs
+- statics :
+	- black, isort, pyclean, pep8
+- Test Driven Dvpt
 - accuracy = 0 est modèle parfait si on inverse sa prédiction
     - plus mauvais : 0.5
 - 0 : prêt accordé, 1 : problème sur le prêt
