@@ -54,7 +54,7 @@
 
 ## later
 - [ ] corriger front
-	- [ ] enlever All
+	- [ ] enlever All dans select box
 	- [ ] limiter a 100 cust
 	- [ ] afficher uniquement les 20 top features
 	- [ ] afficher les 20 premieres colonnes
