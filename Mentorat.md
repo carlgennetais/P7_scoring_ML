@@ -61,15 +61,15 @@
 	- [ ] remplacer str + str par `f"text {variable}"`
 - [ ] dossier tests dans back (normalement se fait en mm tps ou avant code : TDD)
 	- [ ] idealement 80% test coverage
-	- [ ] pytest module
-	- [ ] tester chaque fonction (tests unitaires)
+	- [x] pytest module
+	- [x] tester chaque fonction (tests unitaires)
 		- dtype du return (`isInstance()`)
 		- shape
 		- test des valeurs sur un ID en particulier
 		- verifier type casting des params
 		- codes erreurs si params incorrects
 		- predict : ne pas tester valeur qui peut changer avec modele, juste type
-	- [ ] tester API (pas en live) (test integration ou fonctionnel)
+	- [x] tester API (pas en live) (test integration ou fonctionnel)
 		- mock fictive de API pour faire requests
 	- [ ] passer tests avant push github
 		- github actions
@@ -77,7 +77,7 @@
 				- verifie une branche
 				- evenement trigger : on push, merge
 				- instance python3.xx, pip install -r requirements 
-			- CD.yaml (continous devpt)
+			- CD.yaml (continous deploiement)
 				- n'ecoute que main (pas push mais releases)
 				- si les tests QA et pytest sont OK, deploie
 				- wget sur endpoint secret va declencher MaJ (tokens dans github secrets)
