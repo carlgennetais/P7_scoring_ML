@@ -51,8 +51,7 @@
     - [x] /predict?id=14 charge vecteur, fait calcul et renvoie 0/1 ou proba
     - [x] etat general de la pop : describe en json
     - [x] /shap?id=14 : json avec dico 2 keys :
-
-## later
+## 2024-02-02
 - [ ] corriger front
 	- [ ] enlever All dans select box
 	- [ ] limiter a 100 cust
@@ -71,7 +70,7 @@
 		- predict : ne pas tester valeur qui peut changer avec modele, juste type
 	- [x] tester API (pas en live) (test integration ou fonctionnel)
 		- mock fictive de API pour faire requests
-	- [ ] passer tests avant push github
+	- [x] passer tests avant push github
 		- github actions
 			- CI.yaml (voir IAS : ecrire fichiers .conf)
 				- verifie une branche
@@ -86,6 +85,15 @@
 			- par default github actions ne bloque pas le push, donc utiliser PR avec acceptation manuelle
 		- circle CI, Trevis CI (continous integration, DevOps)
 		- Jenkins
+## later
+- [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
+- [ ] black ., isort, pycln
+- [ ] github actions using lfs
+- [ ] mise en prod :
+	- back : render.com
+	- front : streamlit deploy community cloud
+- [ ] gros dataset : gist 
+- [ ] gh action sur dev aussi, renommer en ci et cd.yml, needs:
 - [ ] atasayan github workflow
 	- ne jamais dvlper sur main mais sur dev, ou branch features, qu'on merge ensuite sur dev
 	- prendre l'habitude de faire des Push Requests de dev vers main
