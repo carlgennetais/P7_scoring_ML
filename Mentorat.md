@@ -89,9 +89,13 @@
 - [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
 - [ ] black ., isort, pycln
 - [ ] github actions using lfs
+- accepter PR
 - [ ] mise en prod :
-	- back : render.com
-	- front : streamlit deploy community cloud
+	- back : render.com -> new service -> build, command uviorn, specifier version python dans variable d'env, auto-deploy : NO
+	- copy deploy hook dans cd.yml wget hook
+	- front : streamlit deploy community cloud, specifier version python
+- [ ] ecrire README
+- [ ] MLflow.org
 - [ ] gros dataset : gist 
 - [ ] gh action sur dev aussi, renommer en ci et cd.yml, needs:
 - [ ] atasayan github workflow
