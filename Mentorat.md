@@ -42,9 +42,7 @@
         -  pour 0
     - [ ] fonction qui extrait un vecteur
 ## 2024-01-26
-- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
-- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
-- [ ] faire front sur streamlit (route par route)
+- [x] faire front sur streamlit (route par route)
     - [x] /hello ou /ping : pour test
     - [x] /listcustomers : list des clients, liste json des ids users
     - [x] ?id=14 : vecteur utils
@@ -52,14 +50,8 @@
     - [x] etat general de la pop : describe en json
     - [x] /shap?id=14 : json avec dico 2 keys :
 ## 2024-02-02
-- [ ] corriger front
-	- [ ] enlever All dans select box
-	- [ ] limiter a 100 cust
-	- [ ] afficher uniquement les 20 top features
-	- [ ] afficher les 20 premieres colonnes
-	- [ ] remplacer str + str par `f"text {variable}"`
-- [ ] dossier tests dans back (normalement se fait en mm tps ou avant code : TDD)
-	- [ ] idealement 80% test coverage
+- [x] dossier tests dans back (normalement se fait en mm tps ou avant code : TDD)
+	- [x] idealement 80% test coverage
 	- [x] pytest module
 	- [x] tester chaque fonction (tests unitaires)
 		- dtype du return (`isInstance()`)
@@ -85,27 +77,43 @@
 			- par default github actions ne bloque pas le push, donc utiliser PR avec acceptation manuelle
 		- circle CI, Trevis CI (continous integration, DevOps)
 		- Jenkins
-## later
-- [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
-- [ ] black ., isort, pycln
-- [ ] github actions using lfs
-- accepter PR
-- [ ] mise en prod :
+## 2024-02-21
+- [x] github actions using lfs
+- [x] mise en prod :
 	- back : render.com -> new service -> build, command uviorn, specifier version python dans variable d'env, auto-deploy : NO
 	- copy deploy hook dans cd.yml wget hook
 	- front : streamlit deploy community cloud, specifier version python
-- [ ] ecrire README
-- [ ] MLflow.org
-- [ ] gros dataset : gist 
-- [ ] gh action sur dev aussi, renommer en ci et cd.yml, needs:
-- [ ] atasayan github workflow
+- [x] atasayan github workflow
 	- ne jamais dvlper sur main mais sur dev, ou branch features, qu'on merge ensuite sur dev
 	- prendre l'habitude de faire des Push Requests de dev vers main
-- [ ] ecrire docstrings
-- [ ] optimisation paramètres
-- [ ] ecrire README etc
-- [ ] poetry gestion venv
-- [ ] changelog
+## 2024-02-23
+- [ ] corriger front
+	- [ ] enlever All dans select box
+	- [ ] limiter a 100 cust
+	- [ ] afficher uniquement les 20 top features
+	- [ ] afficher les 20 premieres colonnes
+	- [x] remplacer str + str par `f"text {variable}"`
+- [ ] Mise en forme
+	- [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
+	- [ ] black ., isort, pyclean
+	- [ ] ecrire docstrings header fichier et fonctions
+	- [ ] enlever code inutile en commentaire
+	- [ ] ecrire README etc
+- [ ] apprendre
+	- [ ] ML OPS 
+	- [ ] MLflow.org
+	- [ ] poetry gestion venv
+	- [ ] pytest fixtures
+- [ ] Optimisation après MLFlow
+	- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
+	- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
+- [ ] GitHub
+	- [ ] gh action sur dev aussi, splitter yaml en ci et cd.yml, avec clause depends needs:
+	- [ ] completer profil github
+	- [ ] accepter PR mentor
+	- [ ] suivre des repos
+	- [ ] ajouter readme general
+	- [ ] changelog
 
 # Notes
 - tests
@@ -130,6 +138,7 @@
     - ruby on rails
 - streamlit pour front
 - regarder figma maquettes
+- gros dataset : gist 
 - planning
     - 1 semaine api/back
     - 1 semaine front (streamlit)
