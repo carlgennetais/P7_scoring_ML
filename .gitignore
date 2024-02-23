@@ -98,3 +98,5 @@ Untitled*.ipynb
 /planning/
 
 .venv
+mlruns
+mlartifacts
