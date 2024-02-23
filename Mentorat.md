@@ -122,6 +122,7 @@
 	- [ ] limiter a 100 cust
 	- [ ] afficher uniquement les 20 top features
 	- [ ] afficher les 20 premieres colonnes
+	- [ ] display shap plot
 	- [x] remplacer str + str par `f"text {variable}"`
 - [ ] Mise en forme
 	- [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
