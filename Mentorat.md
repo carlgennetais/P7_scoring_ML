@@ -1,4 +1,34 @@
 # Changelog, Todo and notes from Mentorat
+# Notes
+- tests
+	- unitaires : plus petite unite de fonction
+	- fonctionnels : plusieurs fonctions d'un coup
+	- integration : parcours utilisateurs
+- statics :
+	- black, isort, pyclean, pep8
+- Test Driven Dvpt
+- accuracy = 0 est modèle parfait si on inverse sa prédiction
+    - plus mauvais : 0.5
+- 0 : prêt accordé, 1 : problème sur le prêt
+- dashboard : streamlit plutôt que Dash
+- convention X (matrice) mais y (array)
+- data leakage : X -> y, ou train -> test
+- split doit se faire avant scaler etc
+- pycharm, DataSpell (nb et sql)
+- choix API :
+    - django (py)
+    - flask (py)
+    - fast (py, pas de templating, renvoie json)
+    - ruby on rails
+- streamlit pour front
+- regarder figma maquettes
+- gros dataset : gist 
+- planning
+    - 1 semaine api/back
+    - 1 semaine front (streamlit)
+    - 1 semaine prod
+    - 1 semaine devOps, test operationnels et mise en prod
+## 2023-12
 - [x] MVP EDA, feature engineering et modeling
 ## 2023-12-15
 - [x] vscode
@@ -114,33 +144,3 @@
 	- [ ] suivre des repos
 	- [ ] ajouter readme general
 	- [ ] changelog
-
-# Notes
-- tests
-	- unitaires : plus petite unite de fonction
-	- fonctionnels : plusieurs fonctions d'un coup
-	- integration : parcours utilisateurs
-- statics :
-	- black, isort, pyclean, pep8
-- Test Driven Dvpt
-- accuracy = 0 est modèle parfait si on inverse sa prédiction
-    - plus mauvais : 0.5
-- 0 : prêt accordé, 1 : problème sur le prêt
-- dashboard : streamlit plutôt que Dash
-- convention X (matrice) mais y (array)
-- data leakage : X -> y, ou train -> test
-- split doit se faire avant scaler etc
-- pycharm, DataSpell (nb et sql)
-- choix API :
-    - django (py)
-    - flask (py)
-    - fast (py, pas de templating, renvoie json)
-    - ruby on rails
-- streamlit pour front
-- regarder figma maquettes
-- gros dataset : gist 
-- planning
-    - 1 semaine api/back
-    - 1 semaine front (streamlit)
-    - 1 semaine prod
-    - 1 semaine devOps, test operationnels et mise en prod
