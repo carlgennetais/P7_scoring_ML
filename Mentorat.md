@@ -119,27 +119,27 @@
 ## 2024-02-23
 - [ ] corriger front
 	- [ ] enlever All dans select box
-	- [ ] limiter a 100 cust
-	- [ ] afficher uniquement les 20 top features
+	- [x] limiter a 100 cust
+	- [x] afficher uniquement les 20 top features
 	- [ ] afficher les 20 premieres colonnes
-	- [ ] display shap plot
+	- [x] display shap plot
 	- [x] remplacer str + str par `f"text {variable}"`
 - [ ] Mise en forme
-	- [ ] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
-	- [ ] black ., isort, pyclean
+	- [x] git ignore pycache, pyc, .out, egginfo, ipycheckpoints
+	- [x] black , isort, pyclean
 	- [ ] ecrire docstrings header fichier et fonctions
 	- [ ] enlever code inutile en commentaire
 	- [ ] ecrire README etc
 - [ ] apprendre
-	- [ ] ML OPS 
-	- [ ] MLflow.org
-	- [ ] poetry gestion venv
-	- [ ] pytest fixtures
+	- [x] ML OPS 
+	- [x] MLflow.org
+	- [x] poetry gestion venv
+	- [x] pytest fixtures
 - [ ] Optimisation après MLFlow
 	- [ ] choix KPI : accuracy ? matrice de confusion, rappel, précision, F-1 score, AUROC
 	- [ ] utiliser seuil proba predict, gridsearch pour trouver meileur seuil de fonction de decision
 - [ ] GitHub
-	- [ ] gh action sur dev aussi, splitter yaml en ci et cd.yml, avec clause depends needs:
+	- [x] gh action sur dev aussi, splitter yaml en ci et cd.yml, avec clause depends needs:
 	- [ ] completer profil github
 	- [ ] accepter PR mentor
 	- [ ] suivre des repos
