@@ -4,7 +4,7 @@ setup(
     name="src",
     packages=find_packages(),
     version="0.1.0",
-    description="A short description of the project.",
+    description="P7 home credit scoring",
     author="carl",
     license="",
 )
