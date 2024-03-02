@@ -5,3 +5,4 @@ jupyterlab_code_formatter
 isort
 black
 flake8
+nbqa==1.7.1
