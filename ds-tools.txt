@@ -6,3 +6,4 @@ isort
 black
 flake8
 nbqa==1.7.1
+autoflake==2.3.0
