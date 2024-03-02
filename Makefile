@@ -41,13 +41,15 @@ clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 
+clean_code:
+	black .
+	isort .
+	nbqa autoflake --remove-all-unused-imports --remove-unused-variables -i notebooks/*.ipynb
+	nbqa isort notebooks/*.ipynb
+
 ## Lint using flake8
 lint:
 	flake8 src
-	black .
-	isort .
-	nbqa isort notebooks/*.ipynb
-	nbqa autoflake --remove-all-unused-imports --remove-unused-variables -i notebooks/*.ipynb
 
 
 ## Set up python interpreter environment

@@ -1,12 +1,14 @@
-import pandas as pd
-import numpy as np
 import math
+
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
+import numpy as np
+import pandas as pd
 import seaborn as sns
+from matplotlib.colors import ListedColormap
 # from anytree import Node, RenderTree
 # machine learning
 from sklearn import decomposition
+
 
 def print_correlation_matrix(df):
     """
@@ -18,27 +20,27 @@ def print_correlation_matrix(df):
     plt.figure()
     sns.set_theme(style="white")  # for white background
     sns.heatmap(
-            df.corr(),
-            # shape
-            mask=np.triu(df.corr()),
-            square=True,
-            linewidths=0.6,
-            # diverging colormap
-            cmap=plt.cm.RdBu,
-            center=0,
-            vmin=-1,
-            vmax=1,
-            # annotations
-            annot=True,
-            annot_kws={"size": 10},
-            fmt=".2f",
-            # cbar_kws={"shrink": 0.5},
-            );
+        df.corr(),
+        # shape
+        mask=np.triu(df.corr()),
+        square=True,
+        linewidths=0.6,
+        # diverging colormap
+        cmap=plt.cm.RdBu,
+        center=0,
+        vmin=-1,
+        vmax=1,
+        # annotations
+        annot=True,
+        annot_kws={"size": 10},
+        fmt=".2f",
+        # cbar_kws={"shrink": 0.5},
+    )
 
 
 def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
     """
-    Plots analysis of variance of a quantitive variable, 
+    Plots analysis of variance of a quantitive variable,
     by a qualitative variable, sorted by median
 
     Parameters:
@@ -48,10 +50,10 @@ def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
     """
     # Exclude NaN then group_by
     grouped = (
-            dataframe.dropna(subset=[X_quanti, Y_quali])[[Y_quali, X_quanti]]
-            .reset_index(drop=True)
-            .groupby(Y_quali)
-            )
+        dataframe.dropna(subset=[X_quanti, Y_quali])[[Y_quali, X_quanti]]
+        .reset_index(drop=True)
+        .groupby(Y_quali)
+    )
     dfGrouped = pd.DataFrame({col: vals[X_quanti] for col, vals in grouped})
 
     # Sort by median
@@ -64,10 +66,10 @@ def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
     # Colors and style
     medianprops = {"color": "yellow"}
     meanprops = {
-            "marker": "o",
-            "markeredgecolor": "red",
-            "markerfacecolor": "red",
-            }
+        "marker": "o",
+        "markeredgecolor": "red",
+        "markerfacecolor": "red",
+    }
 
     if n_top != 0:
         dfGrouped = dfGrouped.iloc[:, -n_top:]
@@ -78,21 +80,21 @@ def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
     plt.title("ANOVA of " + X_quanti + " by " + Y_quali)
     plt.xlabel(X_quanti)
     dfGrouped.boxplot(
-            showfliers=False,
-            medianprops=medianprops,
-            vert=False,
-            patch_artist=True,
-            showmeans=True,
-            meanprops=meanprops,
-            )
+        showfliers=False,
+        medianprops=medianprops,
+        vert=False,
+        patch_artist=True,
+        showmeans=True,
+        meanprops=meanprops,
+    )
 
     #     plt.legend(handles=[meanprops])
-    plt.show();
+    plt.show()
 
 
 # def build_tree(df):
 #     """
-#     Build a tree from dataframe, with right-most cell as children 
+#     Build a tree from dataframe, with right-most cell as children
 #     and left-most cell as parent. Uses Anytree library
 #     """
 #     # clean duplicated lines
@@ -126,6 +128,7 @@ def myANOVA(dataframe, X_quanti, Y_quali, n_top=0):
 #     for pre, fill, node in RenderTree(tree, maxlevel=levels):
 #         print("%s%s" % (pre, node.name))
 
+
 # source : https://www.statology.org/seaborn-barplot-show-values/
 def show_values(axs, orient="v", space=0.01):
     """
@@ -155,7 +158,7 @@ def show_values(axs, orient="v", space=0.01):
 
 def get_relation(df, col1, col2):
     """
-    Returns relationship between 2 columns : 
+    Returns relationship between 2 columns :
     one-to-one, one-to-many, many-to-one or many-to-many
     """
     first_max = df[[col1, col2]].groupby(col1).count().max()[0]
