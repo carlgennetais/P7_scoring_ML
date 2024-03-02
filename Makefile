@@ -20,6 +20,8 @@ endif
 # COMMANDS                                                                      #
 #################################################################################
 
+# TODO: tester installation du projet dans un nouvel env
+
 ## Install Python Dependencies
 requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
