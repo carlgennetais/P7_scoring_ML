@@ -1,7 +1,8 @@
 P7_scoring
 ==============================
 
-A short description of the project.
+Project 7 : Home credit scoring
+TODO: write full desc
 
 Project Organization
 ------------
@@ -52,6 +53,3 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

@@ -74,6 +74,7 @@ target/
 
 # Jupyter NB Checkpoints
 .ipynb_checkpoints/
+Untitled*.ipynb
 
 # exclude data from source control by default
 /data/
@@ -93,6 +94,10 @@ target/
 **/*.jupyterlab-workspace
 .virtual_documents/
 
-
+# Private folders
+/planning/
 
 .venv
+mlruns
+mlartifacts
+Mentorat.md
