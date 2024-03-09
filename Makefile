@@ -36,6 +36,11 @@ data: requirements
 	rm -f data/raw/data.zip
 	ls -lS data/raw
 
+update_API_models:
+	cp ./data/processed/data_cleaned_sample.pkl ../P7_scoring_back/data/processed/
+	cp ./models/*.pkl ../P7_scoring_back/models/
+	cp ./models/*.csv ../P7_scoring_back/models/
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
