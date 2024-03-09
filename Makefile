@@ -20,8 +20,6 @@ endif
 # COMMANDS                                                                      #
 #################################################################################
 
-# TODO: tester installation du projet dans un nouvel env
-
 ## Install Python Dependencies
 requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
@@ -36,11 +34,19 @@ data: requirements
 	rm -f data/raw/data.zip
 	ls -lS data/raw
 
+## Copy models to local repo of API
+update_API_models:
+	cp ./data/processed/data_cleaned_sample.pkl ../P7_scoring_back/data/processed/
+	cp ./models/*.pkl ../P7_scoring_back/models/
+	cp ./models/*.pbz2 ../P7_scoring_back/models/
+	cp ./models/*.csv ../P7_scoring_back/models/
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 
+## Clean notebooks and python fils with black and isort
 clean_code:
 	black .
 	isort .
