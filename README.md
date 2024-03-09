@@ -8,7 +8,7 @@ API providing financial data about customers and their loan application results.
 
 1. [Machine learning](https://github.com/carlgennetais/P7_scoring_ML) (this one)
 2. [Back: API built with FastAPI](https://github.com/carlgennetais/P7_scoring_back)
-3. [Front: Dashboard built with Streamlit)](https://github.com/carlgennetais/P7_scoring_front/)
+3. [Front: Dashboard built with Streamlit](https://github.com/carlgennetais/P7_scoring_front/)
 
 ## Usage
 Visit the live URL : <https://p7-carl-demo.streamlit.app/>
