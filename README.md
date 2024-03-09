@@ -19,12 +19,15 @@ pip install -r requirements.txt
 ```
 
 ## Screenshots
-<!--TODO: screenshots -->
+
+![](./img/homepage.png)
+![](./img/example_granted.png)
+![](./img/shap_example_1.png)
+![](./img/shap_example_2.png)
 
 
-
-Project Organization
-------------
+<!--TODO: tree -->
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
