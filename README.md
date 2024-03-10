@@ -1,19 +1,25 @@
 # P7_scoring_ML
 
 <!--toc:start-->
-- [Context](#context)
-- [Description](#description)
-- [Usage](#usage)
-- [Install](#install)
-- [Makefile](#makefile)
-- [Project Organization](#project-organization)
-- [Credits](#credits)
-- [Screenshots](#screenshots)
+- [P7_scoring_ML](#p7scoringml)
+  - [Context](#context)
+  - [Description](#description)
+  - [Usage](#usage)
+  - [Data](#data)
+  - [Install](#install)
+  - [Makefile](#makefile)
+  - [Project Organization](#project-organization)
+  - [Credits](#credits)
+  - [Screenshots](#screenshots)
 <!--toc:end-->
 
 
 ## Context
-School project #7 with OpenClassrooms
+
+[Project briefing from OpenClassrooms](https://openclassrooms.com/fr/paths/164/projects/632/assignment)
+> L’entreprise souhaite mettre en œuvre un outil de **“scoring crédit” pour calculer la probabilité qu’un client rembourse son crédit**, puis classifie la demande en crédit accordé ou refusé. Elle souhaite donc développer un **algorithme de classification** en s’appuyant sur des sources de données variées (données comportementales, données provenant d'autres institutions financières, etc.).  
+> De plus, les chargés de relation client ont fait remonter le fait que les clients sont de plus en plus demandeurs de **transparence** vis-à-vis des décisions d’octroi de crédit. Cette demande de transparence des clients va tout à fait dans le sens des valeurs que l’entreprise veut incarner.  
+> Prêt à dépenser décide donc de développer un **dashboard interactif** pour que les chargés de relation client puissent à la fois expliquer de façon la plus transparente possible les décisions d’octroi de crédit, mais également permettre à leurs clients de disposer de leurs informations personnelles et de les explorer facilement. 
 
 ## Description
 API providing financial data about customers and their loan application results. The project is split in 3 github repositories:
@@ -26,11 +32,13 @@ API providing financial data about customers and their loan application results.
 ## Usage
 Visit the live URL : <https://p7-carl-demo.streamlit.app/>
 
+## Data
+<https://www.kaggle.com/c/home-credit-default-risk/data>
 
 ## Install
 ```
 $ make requirements
-$ make data
+$ make data           # automatically download and unzip dataset from Kaggle
 ```
 
 ## Makefile
